@@ -1,0 +1,135 @@
+﻿**********************
+Início da transcrição do Windows PowerShell
+Hora de início: 20230202102526
+Nome de Usuário: fde\SISTEMA
+Executar como Usuário: fde\SISTEMA
+Nome da Configuração: 
+Computador: MININT-V6BNBCP (Microsoft Windows NT 10.0.19044.0)
+Aplicativo Host: C:\WINDOWS\system32\windowspowershell\v1.0\powershell.exe -NoProfile -NonInteractive -ExecutionPolicy Bypass -Command & 'C:\_SMSTaskSequence\Packages\P01000C1\removeDefaultApps\removeDefaultApps.ps1'  ; exit ($LASTEXITCODE -bor [int](-not $? -and -not $LASTEXITCODE)) 
+ID do Processo: 5152
+PSVersion: 5.1.19041.1237
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1237
+BuildVersion: 10.0.19041.1237
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcrição iniciada, o arquivo de saída é \removeDefaultApps.ps1.log
+Logging to \removeDefaultApps.ps1.log
+Removing Appx Package: Microsoft.XboxGameCallableUI
+Remove-AppxPackage : Falha na implantação com HRESULT: 0x80073CFA, Falha na remoção. Entre em contato com o fornecedor 
+de software. (Exceção de HRESULT: 0x80073CFA)
+erro 0x80070032: Operação de implantação de AppX Remove no pacote 
+Microsoft.XboxGameCallableUI_1000.19041.1023.0_neutral_neutral_cw5n1h2txyewy de: 
+C:\Windows\SystemApps\Microsoft.XboxGameCallableUI_cw5n1h2txyewy falhou. Este aplicativo faz parte do Windows e não 
+pode ser desinstalado no nível do usuário. Um administrador pode tentar remover o aplicativo do computador usando a 
+opção "Ativar e desativar recursos do Windows". No entanto, talvez não seja possível desinstalar o aplicativo.
+
+OBSERVAÇÃO: para obter informações adicionais, procure [ActivityId] 9e83acfe-3709-0007-feae-839e0937d901 no Log de 
+Eventos ou use a linha de comando Get-AppPackageLog -ActivityID 9e83acfe-3709-0007-feae-839e0937d901
+
+No C:\_SMSTaskSequence\Packages\P01000C1\removeDefaultApps\removeDefaultApps.ps1:69 caractere:1
++ Remove-AppxPackage -package $Package.PackageFullName
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (Microsoft.XboxG...l_cw5n1h2txyewy:String) [Remove-AppxPackage], IOException
+    + FullyQualifiedErrorId : DeploymentError,Microsoft.Windows.Appx.PackageManager.Commands.RemoveAppxPackageCommand
+Remove-AppxPackage : Falha na implantação com HRESULT: 0x80073CFA, Falha na remoção. Entre em contato com o fornecedor
+de software. (Exceção de HRESULT: 0x80073CFA)
+erro 0x80070032: Operação de implantação de AppX Remove no pacote
+Microsoft.XboxGameCallableUI_1000.19041.1023.0_neutral_neutral_cw5n1h2txyewy de:
+C:\Windows\SystemApps\Microsoft.XboxGameCallableUI_cw5n1h2txyewy falhou. Este aplicativo faz parte do Windows e não
+pode ser desinstalado no nível do usuário. Um administrador pode tentar remover o aplicativo do computador usando a
+opção "Ativar e desativar recursos do Windows". No entanto, talvez não seja possível desinstalar o aplicativo.
+
+OBSERVAÇÃO: para obter informações adicionais, procure [ActivityId] 9e83acfe-3709-0007-feae-839e0937d901 no Log de
+Eventos ou use a linha de comando Get-AppPackageLog -ActivityID 9e83acfe-3709-0007-feae-839e0937d901
+
+No C:\_SMSTaskSequence\Packages\P01000C1\removeDefaultApps\removeDefaultApps.ps1:69 caractere:1
++ Remove-AppxPackage -package $Package.PackageFullName
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (Microsoft.XboxG...l_cw5n1h2txyewy:String) [Remove-AppxPackage], IOException
+    + FullyQualifiedErrorId : DeploymentError,Microsoft.Windows.Appx.PackageManager.Commands.RemoveAppxPackageCommand
+
+Unable to find provisioned package: Microsoft.XboxGameCallableUI
+Removing Appx Package: Microsoft.XboxIdentityProvider
+Removing Appx Provisioned Package: Microsoft.XboxIdentityProvider
+
+
+Path          :
+Online        : True
+RestartNeeded : False
+
+Unable to find package: Windows.ContactSupport
+Unable to find provisioned package: Windows.ContactSupport
+Removing Appx Package: microsoft.windowscommunicationsapps
+Removing Appx Provisioned Package: microsoft.windowscommunicationsapps
+Path          :
+Online        : True
+RestartNeeded : False
+
+Unable to find package: Microsoft.BingNews
+Unable to find provisioned package: Microsoft.BingNews
+Removing Appx Package: Microsoft.Getstarted
+Removing Appx Provisioned Package: Microsoft.Getstarted
+Path          :
+Online        : True
+RestartNeeded : False
+
+Unable to find package: Microsoft.BingFinance
+Unable to find provisioned package: Microsoft.BingFinance
+Removing Appx Package: Microsoft.XboxApp
+Removing Appx Provisioned Package: Microsoft.XboxApp
+Path          :
+Online        : True
+RestartNeeded : False
+
+Removing Appx Package: Microsoft.SkypeApp
+Removing Appx Provisioned Package: Microsoft.SkypeApp
+Path          :
+Online        : True
+RestartNeeded : False
+
+Removing Appx Package: Microsoft.ZuneVideo
+Removing Appx Provisioned Package: Microsoft.ZuneVideo
+Path          :
+Online        : True
+RestartNeeded : False
+
+Removing Appx Package: Microsoft.ZuneMusic
+Removing Appx Provisioned Package: Microsoft.ZuneMusic
+Path          :
+Online        : True
+RestartNeeded : False
+
+Unable to find package: Microsoft.WindowsPhone
+Unable to find provisioned package: Microsoft.WindowsPhone
+Removing Appx Package: Microsoft.People
+Removing Appx Provisioned Package: Microsoft.People
+Path          :
+Online        : True
+RestartNeeded : False
+
+Removing Appx Package: Microsoft.MicrosoftSolitaireCollection
+Removing Appx Provisioned Package: Microsoft.MicrosoftSolitaireCollection
+Path          :
+Online        : True
+RestartNeeded : False
+
+Removing Appx Package: Microsoft.MicrosoftOfficeHub
+Removing Appx Provisioned Package: Microsoft.MicrosoftOfficeHub
+Path          :
+Online        : True
+RestartNeeded : False
+
+Unable to find package: Microsoft.BingSports
+Unable to find provisioned package: Microsoft.BingSports
+Unable to find package: Microsoft.3DBuilder
+Unable to find provisioned package: Microsoft.3DBuilder
+Unable to find package: Microsoft.WindowsFeedback
+Unable to find provisioned package: Microsoft.WindowsFeedback
+**********************
+Fim da transcrição do Windows PowerShell
+Hora de término: 20230202102540
+**********************
